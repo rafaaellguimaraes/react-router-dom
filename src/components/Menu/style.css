@@ -1,5 +1,9 @@
 .menu ul {
     display: flex;
     list-style: none;
-    gap: 30px
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #2365;
+    height: 50px;
 }

@@ -14,7 +14,9 @@ export const Redirect = () => {
             setTime((t) => t - 1)
         }, 1000)
         if(time <= 0) {
-            navigate('/')
+            navigate('/', {
+                state: `This is the state: ${Math.random()}`,
+            })
         }
         return () => {
             clearTimeout(timeout.current)
@@ -27,3 +29,4 @@ export const Redirect = () => {
         </div>
     )
 }
+//replace, quando vc faz o redirect mas não quer que esse link fique no history
